@@ -1,0 +1,54 @@
+/* ===== Сброс стилей ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.form-add * {
+    display: inline-block;
+    background-position: center;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+.form-add input {
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    border: 1px solid rgba(30, 10, 60, 0.12);
+    border-radius: 8px;
+    background-color: white;
+    -webkit-text-fill-color: #9b96a6;
+}
+.form-add .form-add__input {
+    margin-top: 12px;
+}
+
+.form-add .form-add__button {
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 14px;
+    border: 1px solid rgba(30, 10, 60, 0.12);
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: #7e66cd;
+    -webkit-text-fill-color: white;
+    cursor: pointer;
+}
