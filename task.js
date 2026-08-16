@@ -88,3 +88,46 @@ function taskSummary(total, done) {
 
 console.log(taskSummary(5, 3));
 console.log(taskSummary(10, 4));
+
+
+// ===== Урок: 21 =====
+let numbers = [10, 20, 30, 40, 50];
+console.log(numbers[0]);              // первый элемент — 10
+console.log(numbers[numbers.length-1]); // последний элемент — 50
+
+let cities = ["Москва", "Париж", "Берлин", "Токио"];
+cities[2] = "Лондон";  
+console.log(cities); 
+// ["Москва", "Париж", "Лондон", "Токио"]
+
+let task = {
+  id: 1,
+  title: "Купить молоко",
+  status: "активна"
+};
+console.log(task.id);     // 1
+console.log(task.title);  // "Купить молоко"
+console.log(task.status); // "активна"
+
+let tasks = [
+  { id: 1, title: "Купить молоко", status: "активна" },
+  { id: 2, title: "Позвонить врачу", status: "выполнена" },
+  { id: 3, title: "Сделать уроки", status: "активна" }
+];
+console.log(tasks[0].title);  // "Купить молоко"
+console.log(tasks[1].status); // "выполнена"
+
+tasks[0].status = "выполнена";
+console.log(tasks[0]); 
+// { id: 1, title: "Купить молоко", status: "выполнена" }
+
+tasks.push({ id: 4, title: "Прогулка", status: "активна" });
+console.log(tasks);
+
+let user = {
+  name: "Анна",
+  tasks: tasks
+};
+
+console.log(user.name);         // "Анна"
+console.log(user.tasks.length); // 4
