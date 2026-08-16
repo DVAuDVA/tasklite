@@ -31,15 +31,16 @@ html, body {
   padding: 0 24px;
 }
 
-.form-add * {
+.form-add__input, .form-add__button {
     display: inline-block;
     background-position: center;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     margin-right: 12px;
 }
 
-.form-add input {
+.form-add__input {
     width: 100%;
+    margin-top: 12px;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 12px;
@@ -49,11 +50,10 @@ html, body {
     background-color: white;
     -webkit-text-fill-color: #9b96a6;
 }
-.form-add .form-add__input {
-    margin-top: 12px;
-}
 
-.form-add .form-add__button {
+.form-add__button {
+  margin-top: 12px;
+  margin-bottom: 12px;
     margin-left: 45px;
     margin-right: 45px;
     font-size: 14px;
@@ -163,4 +163,69 @@ html, body {
   background: #fff;
   font-weight: 500;
   color: #5e5472;
+}
+
+.toolbar {
+    display: inline-block;
+    background-position: center;
+}
+
+.toolbar * {
+  display: inline-block;
+  background-position: center;
+  margin-right: 12px;
+  margin-bottom: 15px;
+}
+
+.toolbar__search {
+    width: 100%;
+    margin-top: 12px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    border: 1px solid rgba(30, 10, 60, 0.12);
+    border-radius: 8px;
+    background-color: white;
+    -webkit-text-fill-color: #9b96a6;
+}
+
+.input--cursored {
+  border: 1px solid rgba(30, 10, 60, 0.2);
+}
+
+.input--focused {
+  border: 0px;
+  border: 1px solid #7e66cd;
+  box-shadow: 0 0 0 3px rgba(126, 102, 205, 0.28);
+}
+
+.task {
+  padding: 10px 12px;
+  border: 1px solid rgba(30, 10, 60, 0.12);
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.task__title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #221c2a;
+}
+
+.task__meta {
+  font-size: 12px;
+  color: #8a8398;
+}
+
+.task__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
